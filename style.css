@@ -1,0 +1,478 @@
+body{
+  font-family: 'Poppins', sans-serif;
+}
+
+/*============  Part 1 ============ */
+.part1{
+  height: 100vh;
+  background: url(images/bg_1.jpg);
+  background-size: cover;
+  background-position: 50% 0; /* background resmini her boyutta orta noktasini ortalamak icin */
+  position: relative;
+}
+.overlay{
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.6);
+  position: absolute; /* divleri ust uste getirebilmek icin */
+  top: 0;
+  left: 0;
+}
+.navbar{
+  position: absolute;
+  top: 30px;
+  width: 75%;
+  z-index: 999;
+}
+@media only screen and (max-width:768px){
+  .navbar{
+    background: rgba(0, 0, 0, .45);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+  }
+}
+.part1 .navbar-brand{
+  font-weight: 600;
+  font-size: 26px;
+
+}
+.part1 .navbar-brand .big{
+  font-size: 40px;
+}
+.part1 .navbar li{
+  margin-left: 20px;
+
+}
+.part1 .navbar li a{
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+  transition: 0.3s;
+}
+.part1 .navbar .navbar-nav .active>a,
+.part1 .navbar .navbar-nav a:hover{
+	color: #ffc107 !important;
+}
+.part1 .container .row{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.part1 .sagicerik{
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.part1 .sagicerik h3{
+  color: black;
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.part1 .sagicerik label{
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+
+}
+
+.part1 .sagicerik input[type="submit"]{
+  background-color: #ffc107 !important ;
+  border: 1px #ffc107 !important ;
+  padding: 15px 0;
+  font-size: 20px;
+}
+.part1 .sagicerik input[type="text"]{
+  font-size: 12px;
+}
+
+
+@media only screen and (max-width:768px){
+  .part1{
+    height: 970px;
+  }
+  h2{
+    margin-top: 45px;
+    margin-left: 60px;
+  }
+  p{margin-left: 60px;}
+}
+
+/* ============  Part 2 ============  */
+.part2{
+  margin: 50px auto;
+}
+.part2 label{
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.part2 select{
+  font-size: 14px;
+  
+}
+.part2 .btn.btn-primary{
+  margin-top: 28px;
+  background-color: #ffc107;
+  border: 1px solid #ffc107;
+}
+
+/* ============  Part3 ============ */
+
+.part3{
+  margin-top: 60px;
+  text-align: center;
+}
+.part3 p{
+  color: #ffc107;
+  font-size: 14px;
+  font-weight: 850;
+}
+.part3 h3{
+  font-size: 42px;
+  font-weight: 950;
+  margin-bottom: 100px;
+}
+.part3 i{
+  font-size: 24px;
+  color: #ffc107;
+}
+.part3 h4{
+  font-size: 18px;
+  font-weight: 650;
+  padding: 5px;
+  display: inline;
+
+}
+.part3 .tool p{
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  color: #454544;
+  margin-top: 30px;
+  text-align: left;
+}
+.part3 .tool .no{
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* ============  Part4 ============ */
+
+.part4{
+  margin-top: 100px;
+  text-align: center;
+}
+.part4 p{
+  font-size: 14px;
+  color: #ffc107;
+  font-weight: 850;
+}
+
+.part4 h3{
+  font-size: 42px;
+  font-weight: 750;
+  margin-bottom: 100px;
+}
+
+.part4 .etiket {
+  width: 100%;
+  text-align: center;
+  border: 1px solid #ababab;
+  padding-bottom:20px ;
+}
+
+.part4 .etiket .img{
+  width: 100%;
+  height: 200px;
+  position: relative; /* icine ekleyecegimiz etiketi rahat konumlandirabilmek adina. Kapsayici relative icinde ki absolute seklinde bunu halledebiliriz*/
+  background-size: cover !important; /* burada important dememizin sebebi ise bootstrap img sinifinin olmasindan dolayi yada img sinif etiketinin adini degistirebiliriz*/
+  background-position: center center !important;
+}
+
+.part4 .fiyat{
+  background: white;
+}
+.part4 .tutar{
+  font-size: 20px;
+  padding: 10px;
+  color: #ffc107;
+}
+.part4 .fiyat p{
+  padding: 10px;
+  margin-bottom: 0;
+}
+.part4 .fiyat .from-day span{
+  display: block;
+  font-size: 12px;
+}
+
+.part4 .etiket h5{
+  margin-top: 30px;
+  font-size: 22px;
+  color: #000;
+}
+.part4 .etiket p{
+  color: rgba(0, 0, 0, .75);
+}
+.part4 .etiket .butonlar{
+  display: flex;
+  justify-content: space-around;
+}
+.part4 .etiket .butonlar .btn{
+  width: 45%;
+  color: #000;
+  font-size: 14px;
+  transition: .38s;
+}
+.part4 .etiket .butonlar .btn:hover{
+  background: #ffc107;
+  color: whitesmoke;
+  font-size: 17px;
+  font-weight: 40;
+
+}
+
+/*============  Part 5 ============ */
+
+.part5{
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  background: url(images/arteum-ro-KiTalJFRkcg-unsplash.jpg);
+  background-size: cover;
+  background-position: center center ;
+  position: relative;
+
+}
+
+/* container container fluid icinde absolute oldugu icin sola hizalandi
+   bunu engellemek adina:
+   -part5 flex yapiya donusturuldu ve justify-content ozelligi icindekileri ortaladik
+   -container icindekileri sayfanin ortasina almak icin text-align niteligi kullanildi
+*/
+
+.part5 .container{
+  z-index: 200;
+  position: absolute;
+  color: whitesmoke;
+  text-align: center;
+}
+.part5 p{
+  margin-top: 50px;
+  font-size: 18px;
+  color: whitesmoke;
+}
+.part5 h2{
+  font-size: 42px;
+  margin-bottom: 200px;
+  color: whitesmoke;
+}
+.part5 .resim{ 
+  width: 85px;
+  height: 85px;
+  border: 2px solid #ffc107;
+  border-radius: 100%;
+  font-size: 30px;
+  padding: 15px;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+.part5 .icerik h3{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 800;
+}
+.part5 .icerik p{
+  color: rgba(255, 255, 255, .75);
+  font-size: 16px;
+  line-height: 30px;
+  margin: 10px;
+}
+
+@media only screen and (max-width:768px){
+  .part5{
+    height: 1410px;
+    
+  }
+  .part5 .icerik{
+    margin-bottom: 30px;
+  }
+}
+
+/* ============  Part 6 ============  */
+
+.part6{
+  margin-top: 100px;
+  text-align: center ;
+}
+.part6 p{
+  font-size: 14px;
+  color: #ffc107;
+  font-weight: 850;
+}
+
+.part6 h2{
+  font-size: 42px;
+  font-weight: 750;
+  margin-bottom: 100px;
+}
+
+.part6 .card{
+	text-align: center;
+	height: 100%;
+}
+.part6 img{
+	width: 100px;
+	height: 100px;
+	border-radius: 100%;
+}
+.part6 .card .aciklama{
+  margin: 20px;
+}
+
+
+.part6 .card p{
+	margin-top: 30px;
+	font-size: 18px;
+	line-height: 1.8;
+	font-weight: 500;
+	color:#666;
+	
+}
+.part6 .card h5{
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	color:#fc983c;
+}
+.part6 .card span{
+	font-size: 16px;
+	color:#ccc;
+	font-weight: 600;
+}
+
+
+/* ============  Part 7 ============  */
+
+.part7{
+  margin-top: 150px;
+  margin-bottom: 75px;
+
+}
+.part7 .aboutImg{
+  background-size: cover !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+.part7 .baslik p{
+  font-size: 16px;
+  color: #ffc107;
+  font-weight: 600;
+}
+.part7 .baslik h3{
+  font-size: 42px;
+  font-weight: 850;
+  margin-bottom: 50px;
+}
+.part7 article{
+  padding: 40px;
+  text-align: center;
+}
+
+.part7 article p.icerik{
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 500;
+  color: #666;
+}
+.part7 article .btn{
+  background-color: #ffc107;
+  border: none;
+  color: #fff;
+}
+
+@media only screen and (max-width:768px){
+  .part7 .aboutImg{
+    height: 600px;
+  }
+}
+
+
+/* ============  Part 8 ============  */
+
+
+footer{
+  margin-top: 150px;
+  background: #000;
+  padding: 80px 0;
+}
+footer h3{
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 22px;
+}
+footer p {
+  line-height: 1.8;
+  font-weight: 400;
+  color: rgba(255, 255, 255, .75);
+}
+
+footer ul.socialMedia {
+margin-top: 40px ;
+list-style: none;
+text-align: left;
+padding: 0px;
+}
+footer ul.socialMedia li{
+  display: block;
+  float: left;
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 100%;
+  background-color: #171717;
+}
+footer ul.socialMedia li a{
+  display: block;
+  font-size: 25px;
+  color: whitesmoke;
+  
+}
+footer ul.footerList{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul.footerList{
+  display: block;
+  margin-bottom: 10px;
+}
+footer ul.footerList li a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, .75);
+  line-height: 1.8;
+}
+.footerList i{
+  color: #fff;
+  float: left;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.part2, .part3, .part4,.part5,.part6,.part7, footer{
+  opacity: 0;
+}
+
+
+
+
+
+
+
+
